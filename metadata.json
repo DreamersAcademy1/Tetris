@@ -1,0 +1,6 @@
+{
+  "name": "Tetris Arcade Retro",
+  "description": "A retro 2D Tetris arcade puzzle game featuring neon visuals, smooth animations, ghost piece, particle explosions, synth sound effects, and responsive PC and mobile controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
