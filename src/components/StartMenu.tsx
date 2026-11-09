@@ -2,6 +2,7 @@ import React from 'react';
 import { Play, Trophy, Flame, Zap, Shield, Sparkles } from 'lucide-react';
 import { GameMode } from '../game/tetrisConstants';
 import { soundEngine } from '../game/soundEngine';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface StartMenuProps {
   gameMode: GameMode;
@@ -151,9 +152,14 @@ export const StartMenu: React.FC<StartMenuProps> = ({
         <span>START GAME [SPACE]</span>
       </button>
 
+      {/* PWA Offline Install Button */}
+      <div className="mt-3 flex justify-center w-full">
+        <PWAInstallButton />
+      </div>
+
       {/* Footer controls hint */}
-      <div className="mt-4 text-center text-xs text-slate-500 font-mono">
-        Desktop: Arrow Keys / WASD · Mobile: On-Screen Touch Controls
+      <div className="mt-3 text-center text-xs text-slate-500 font-mono">
+        Desktop: Arrow Keys / WASD · Mobile: On-Screen Touch Controls · Offline Ready
       </div>
     </div>
   );

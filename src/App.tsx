@@ -14,6 +14,7 @@ import { MobileControls } from './components/MobileControls';
 import { StartMenu } from './components/StartMenu';
 import { GameOverModal } from './components/GameOverModal';
 import { PauseModal } from './components/PauseModal';
+import { OfflineIndicator } from './components/OfflineIndicator';
 
 export default function App() {
   const {
@@ -205,6 +206,9 @@ export default function App() {
           onMenu={returnToMenu}
         />
       )}
+
+      {/* Offline Status Badge */}
+      <OfflineIndicator />
     </div>
   );
 }

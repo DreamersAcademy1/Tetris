@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { GameMode, GameStats } from '../game/tetrisConstants';
 import { soundEngine } from '../game/soundEngine';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface ArcadeHudProps {
   stats: GameStats;
@@ -175,6 +176,8 @@ export const ArcadeHud: React.FC<ArcadeHudProps> = ({
         >
           <Pause className="w-4 h-4" />
         </button>
+
+        <PWAInstallButton compact />
 
         <button
           type="button"
